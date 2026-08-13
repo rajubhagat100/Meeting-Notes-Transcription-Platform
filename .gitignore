@@ -1,0 +1,19 @@
+# Python
+backend/venv/
+backend/__pycache__/
+backend/**/*.pyc
+backend/meetings.db
+
+# Node
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+
+# IDE / OS / Env
+.env
+.env.local
+.DS_Store
+.vscode/
+.idea/
+.gemini/
