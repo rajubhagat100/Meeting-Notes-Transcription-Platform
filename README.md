@@ -2,6 +2,13 @@
 
 A highly polished, premium, fullstack clone of the Fireflies.ai workspace built as an SDE Fullstack Assignment. It features a responsive Next.js frontend, a Python FastAPI backend, and a SQLite database.
 
+## Live Deployments
+
+- **Frontend (Vercel)**: [https://meeting-notes-transcription-platform-iota.vercel.app/](https://meeting-notes-transcription-platform-iota.vercel.app/)
+- **Backend API (Render)**: [https://meeting-notes-transcription-platform-zgvd.onrender.com/](https://meeting-notes-transcription-platform-zgvd.onrender.com/)
+  - Swagger Documentation: [https://meeting-notes-transcription-platform-zgvd.onrender.com/docs](https://meeting-notes-transcription-platform-zgvd.onrender.com/docs)
+  - API Health Status: [https://meeting-notes-transcription-platform-zgvd.onrender.com/api/health](https://meeting-notes-transcription-platform-zgvd.onrender.com/api/health)
+
 ## Architecture & Features at a Glance
 
 ```
@@ -168,3 +175,16 @@ The SQLite database contains 6 interconnected tables:
 - **Authentication**: Authentication is mocked to assume a default logged-in user (`Raju Bhagat`, SDE Fullstack role) for actions like commenting.
 - **Audio/Video Media**: Since speech-to-text is out of scope, uploading a transcript generates mock media timelines backed by standard placeholder assets (e.g. Big Buck Bunny MP4 clip) or custom-seeded timelines.
 - **LLM Summary**: If `GEMINI_API_KEY` is not present, a custom programmatic parser extracts action items (using keywords like *should*, *todo*, *need to*) and creates structured chapters dynamically.
+
+---
+
+## Roadmap & Planned Features (Coming Soon)
+
+We plan to expand this Fireflies.ai clone with the following next-level features:
+- **Real-Time Video Conferencing Bot**: Integration of an automated bot that joins Zoom, Google Meet, and Microsoft Teams calls via calendar invites, recording and transcribing meetings live.
+- **Advanced Speaker Analytics Dashboard**: Interactive graphs illustrating speaker talk-time ratios, speaking speeds (words-per-minute), and real-time sentiment analysis of each segment.
+- **Slack & Microsoft Teams Notifications**: Auto-post meeting overview summaries and lists of action items directly to corresponding project channels on communication platforms.
+- **Enterprise Collaborative Workspaces**: Multi-tenant spaces with team administration roles, file-sharing links, and project permissions.
+- **Multilingual Support**: Real-time translation of transcripts and AI summaries across 40+ languages (e.g. Spanish, German, French, Hindi).
+- **Soundbites & Clips Generator**: Ability to highlight a transcript section and extract/share an audio-visual snippet with team members immediately.
+- **Two-way CRM Integration**: Push action items directly to Jira, Salesforce, HubSpot, and Asana.

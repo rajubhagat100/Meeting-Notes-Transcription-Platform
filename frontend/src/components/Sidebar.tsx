@@ -8,7 +8,11 @@ import {
   Layers, 
   HelpCircle, 
   Users, 
-  Radio
+  Radio,
+  BarChart3,
+  Search,
+  Tag,
+  Bot
 } from "lucide-react";
 
 export default function Sidebar() {
@@ -17,6 +21,10 @@ export default function Sidebar() {
   const navItems = [
     { name: "Meetings Library", icon: LayoutDashboard, path: "/", active: pathname === "/" },
     { name: "Live Assistant", icon: Radio, path: "#", active: false, badge: "Coming Soon" },
+    { name: "Smart Search", icon: Search, path: "#", active: false, badge: "Coming Soon" },
+    { name: "AskFred AI Chat", icon: Bot, path: "#", active: false, badge: "Coming Soon" },
+    { name: "Analytics", icon: BarChart3, path: "#", active: false, badge: "Coming Soon" },
+    { name: "Topic Tracker", icon: Tag, path: "#", active: false, badge: "Coming Soon" },
     { name: "Integrations", icon: Layers, path: "#", active: false, badge: "Coming Soon" },
     { name: "Team Spaces", icon: Users, path: "#", active: false, badge: "Coming Soon" },
     { name: "Settings", icon: Settings, path: "#", active: false, badge: "Placeholder" },
